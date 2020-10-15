@@ -1,0 +1,35 @@
+.header {
+    height: 10vh;
+    background-color: #ff6464;
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 75);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile {
+    display: flex;
+
+}
+
+.profile > h4 {
+    color: #ffb99a;
+}
+
+.header_options {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header_options > h4 {
+    color: white;
+}
+
+.header_options > .MuiSvgIcon-root {
+    color: #ffb99a;
+}
+
+.header_option {
+    color: white;
+}
