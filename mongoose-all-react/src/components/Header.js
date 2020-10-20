@@ -1,31 +1,22 @@
 import React from 'react'
 import '../css/header.css'
 import { Avatar, IconButton } from '@material-ui/core'
-import { Favorite, Menu, Notifications, ShoppingCart } from '@material-ui/icons'
+import { ArrowDropDown, Favorite, Menu, Notifications, Search, ShoppingCart } from '@material-ui/icons'
 
 export default function Header() {
     return (
         <div className="header">
-            <div className="profile">
-                <IconButton>
-                    <Menu className="header_option" />
-                </IconButton>
+            <div className="site-logo">
+                <img src={require('../assests/topic.png')} />
             </div>
-            <div className="header_options">
-                <IconButton>
-                    <Avatar />
+            <div className="search-container">
+                <IconButton className="search-btn">
+                    <ArrowDropDown />
                 </IconButton>
-
-                <IconButton>
-                    <Notifications className="header_option" />
+                <input placeholder="Search Anything here..." type="text" className="search" />
+                <IconButton className="search-btn">
+                    <Search />
                 </IconButton>
-                <IconButton>
-                    <ShoppingCart className="header_option" />
-                </IconButton>
-                <IconButton>
-                    <Favorite className="header_option" />
-                </IconButton>
-
             </div>
         </div>
     )
