@@ -49,6 +49,8 @@
     margin: 10px;
     background-color: white;
     display: flex;
+    background-image: url("../assests//sale-banner.jpg");
+    background-repeat: no-repeat;
 }
 
 .offer-container {
@@ -66,7 +68,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
 }
 
 .sales-image > img {
@@ -77,14 +78,18 @@
 
 .sales-details {
     flex: 0.7;
-    display: flex;
+    display: table;
     /* align-items: center; */
-    /* justify-content: center; */
-    background-color: tomato;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .sales-day-count {
-
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
 }
 
 .timer {
@@ -107,4 +112,33 @@
 .timer > h4 {
     padding-left: 5px;
     padding-right: 5px;
+    text-align: center;
+    color: white;
+}
+
+.sales-day-count > h3 {
+    text-align: center;
+    color: white;
+}
+
+.shop-now-btn-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-now-btn {
+    width: 30%;
+    height: 40px;
+    background-color: #ff6464;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 75);
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
 }

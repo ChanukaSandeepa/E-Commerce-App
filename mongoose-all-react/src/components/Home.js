@@ -60,8 +60,10 @@ export default function Home() {
                                 <div>19</div>
                             </div>
                         </div>
-                        <div>
-
+                        <div className="shop-now-btn-container">
+                            <div className="shop-now-btn">
+                                SHOP NOW
+                            </div>
                         </div>
                     </div>
                 </div>
