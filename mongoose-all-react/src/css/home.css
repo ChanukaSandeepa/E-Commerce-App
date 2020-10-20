@@ -1,3 +1,110 @@
-.home {
-    background-color: silver;
+.left-content {
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 75); */
+}
+
+.carousel {
+    width: 100%;
+}
+
+.home-category-container {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1000;
+    margin-top: 10px;
+}
+
+.category-field {
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 75);
+    /* width: 20vw; */
+    flex: 1;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+    transition: transform 200ms ease-in;
+}
+.category-field:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+.discount-container {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1000;
+    margin-top: 10px;
+}
+
+.sales-container {
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 75);
+    /* width: 20vw; */
+    flex: 0.76;
+    height: 100%;
+    margin: 10px;
+    background-color: white;
+    display: flex;
+}
+
+.offer-container {
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 75);
+    /* width: 20vw; */
+    flex: 0.24;
+    height: 100%;
+    background-color: white;
+    margin: 10px;
+    transition: transform 200ms ease-in;
+}
+
+.sales-image {
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+.sales-image > img {
+    width: 80%;
+    height: 70%;
+    /* background-color: yellow; */
+}
+
+.sales-details {
+    flex: 0.7;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: tomato;
+}
+
+.sales-day-count {
+
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer > div {
+    background-color: #851d41;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+.timer > h4 {
+    padding-left: 5px;
+    padding-right: 5px;
 }
