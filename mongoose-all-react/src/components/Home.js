@@ -30,16 +30,48 @@ export default function Home() {
             </div>
             <div className="home-category-container">
                 <div className="category-field">
-
+                    <div className="cat-title-container">
+                        <h4>Computer & Accessories</h4>
+                    </div>
+                    <div className="cat-image-container">
+                        <img src={require('../assests/computer.jpg')} />
+                    </div>
+                    <div className="cat-browse-container">
+                        See more
+                    </div>
                 </div>
                 <div className="category-field">
-
+                    <div className="cat-title-container">
+                        <h4>Furnitures</h4>
+                    </div>
+                    <div className="cat-image-container">
+                        <img src={require('../assests/furniture.jpg')} />
+                    </div>
+                    <div className="cat-browse-container">
+                        See more
+                    </div>
                 </div>
                 <div className="category-field">
-
+                    <div className="cat-title-container">
+                        <h4>Electronics</h4>
+                    </div>
+                    <div className="cat-image-container">
+                        <img src={require('../assests/electronics.jpg')} />
+                    </div>
+                    <div className="cat-browse-container">
+                        See more
+                    </div>
                 </div>
                 <div className="category-field">
-
+                    <div className="cat-title-container">
+                        <h4>Beauty Pics</h4>
+                    </div>
+                    <div className="cat-image-container">
+                        <img src={require('../assests/beauty.jpg')} />
+                    </div>
+                    <div className="cat-browse-container">
+                        See more
+                    </div>
                 </div>
             </div>
             <div className="discount-container">
