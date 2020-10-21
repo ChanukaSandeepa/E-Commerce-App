@@ -61,6 +61,53 @@
     background-color: white;
     margin: 10px;
     transition: transform 200ms ease-in;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* background-color: salmon; */
+}
+
+
+.left-arrow {
+    
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 0;
+    border-radius: 200px;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3px;
+    transition: transform 200ms ease-in;
+    display: none;
+}
+
+.right-arrow {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    right: 0;
+    border-radius: 200px;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+    display: none;
+}
+
+.offer-container:hover .left-arrow {
+    display: flex;
+}
+
+.offer-container:hover .right-arrow {
+    display: flex;
 }
 
 .sales-image {

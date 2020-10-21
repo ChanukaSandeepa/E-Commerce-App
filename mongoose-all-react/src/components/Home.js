@@ -1,6 +1,8 @@
 import React from 'react'
 import '../css/home.css'
 import Carousel from 'infinite-react-carousel';
+import { IconButton } from '@material-ui/core';
+import { ArrowRight, ArrowLeft } from '@material-ui/icons';
 
 export default function Home() {
 
@@ -101,6 +103,16 @@ export default function Home() {
                 </div>
                 <div className="offer-container">
 
+                    <div className="left-arrow">
+                        <IconButton>
+                            <ArrowLeft />
+                        </IconButton>
+                    </div>
+                    <div className="right-arrow">
+                        <IconButton>
+                            <ArrowRight />
+                        </IconButton>
+                    </div>
                 </div>
             </div>
         </div>
