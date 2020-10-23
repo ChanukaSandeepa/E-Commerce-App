@@ -12,10 +12,11 @@ router.get('/register', (req, res) => {
 
 router.get('/test', (req, res) => {
     const test = new Test({
-
+        bacon: 1,
+        phone: '12345'
     })
     const error = test.validateSync();
-    console.log(error.errors['bacon'].message)
+    console.log(error)
     res.send("OK")
 })
 

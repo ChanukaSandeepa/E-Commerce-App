@@ -11,6 +11,16 @@ const schema = new mongoose.Schema({
         required: function () {
             return this.bacon > 3
         }
+    },
+    phone: {
+        type: String,
+        validate: {
+            validator: function (val) {
+                console.log(val)
+                return false
+            },
+            message: "Test failed beacause of you"
+        }
     }
 })
 
