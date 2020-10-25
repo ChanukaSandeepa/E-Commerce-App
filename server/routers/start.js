@@ -6,11 +6,10 @@ const router = new express.Router()
 
 router.get('/register', (req, res) => {
     const { name, email, contactNo, password } = req.body
-
-
 })
 
 router.get('/test', (req, res) => {
+    console.log(localStorage.getItem('user'))
     const test = new Test({
         bacon: 1,
         phone: '12345'
