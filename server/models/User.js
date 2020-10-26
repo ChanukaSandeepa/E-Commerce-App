@@ -30,6 +30,10 @@ userSchema.methods.generateAuthToken = (id) => {
     return token
 }
 
+userSchema.path("password").validate(function (val) {
+    return val.length > 8
+}, "Password should have at least 8 characters")
+
 const User = mongoose.model('User', userSchema)
 
 module.exports = User
