@@ -4,8 +4,17 @@ const Test = require('../models/Test')
 
 const router = new express.Router()
 
-router.get('/register', (req, res) => {
-    const { name, email, contactNo, password } = req.body
+router.post('/register', async (req, res) => {
+    const data = req.body
+    const user = new User(data)
+    const exists = await user.checkForExistence();
+    if (!exists) {
+
+        return res.send({ success: "Not Available" })
+    } else {
+        console.log(exists)
+        return res.send({ error: "Dont know" })
+    }
 })
 
 router.get('/test', (req, res) => {
