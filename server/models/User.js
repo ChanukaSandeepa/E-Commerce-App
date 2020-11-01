@@ -32,15 +32,17 @@ userSchema.methods.generateAuthToken = (id) => {
     return token
 }
 
-userSchema.methods.checkForExistence = async function () {
+userSchema.methods.checkForExistence = function () {
     try {
-        console.log(this)
-        const rt = await mongoose.model('User').findOne({ email: this.email })
-        console.log(rt)
+        // console.log(this)
+        return mongoose.model('User').findOne({ email: this.email }).exec()
+
+
     } catch (error) {
         console.log(error)
+        return error
     }
-    return undefined
+
 }
 
 userSchema.path("password").validate(function (val) {
